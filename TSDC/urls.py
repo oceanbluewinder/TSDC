@@ -6,5 +6,4 @@ app_name = "TSDC"
 urlpatterns = [
     path('',views.about,name='about'),
     url(r'^industry/', include('industry.urls')),
-    
 ]

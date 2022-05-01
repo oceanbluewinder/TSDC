@@ -77,7 +77,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon rotate-n-15">
-                    
+
                     <!-- TSDC圖標 -->
                     <img src="{% static 'images/TSDC_去背.png' %}" alt="TSDC logo" height="50" width="50">
                 </div>
@@ -97,7 +97,7 @@
                     <i class="fas fa-laugh-wink"></i>
                     <span>關於我們</span>
                 </a>
-                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Components:</h6>-->
                         <a class="collapse-item" href={% url 'industry:aboutus1' %}>專案緣起</a>
@@ -107,18 +107,74 @@
                 </div>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu 產業類 -->
+            <!-- 財報report -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                    aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-industry"></i>
-                    <span>產業類</span>
+                    <span>財報</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Components:</h6>-->
-                        <a class="collapse-item" href="#">金融</a>
-                        <a class="collapse-item" href="#">半導體</a>
+                        <a class="collapse-item" href={% url 'industry:report_2324' %}>2324仁寶</a>
+                        <a class="collapse-item" href={% url 'industry:report_2357' %}>2357華碩</a>
+                        <a class="collapse-item" href={% url 'industry:report_2365' %}>2365昆穎</a>
+                        <a class="collapse-item" href={% url 'industry:report_2382' %}>2382廣達</a>
+                        <a class="collapse-item" href={% url 'industry:report_2809' %}>2809京城銀</a>
+                        <a class="collapse-item" href={% url 'industry:report_2832' %}>2832台產</a>
+                        <a class="collapse-item" href={% url 'industry:report_2849' %}>2849安泰銀</a>
+                        <a class="collapse-item" href={% url 'industry:report_2886' %}>2886兆豐金</a>
+                        <a class="collapse-item" href={% url 'industry:report_2891' %}>2891中信金</a>
+                        <a class="collapse-item" href={% url 'industry:report_3231' %}>3231緯創</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 籌碼chip -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
+                   aria-expanded="true" aria-controls="collapseThree">
+                    <i class="fas fa-industry"></i>
+                    <span>籌碼</span>
+                </a>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--<h6 class="collapse-header">Custom Components:</h6>-->
+                        <a class="collapse-item" href={% url 'industry:chip_2324' %}>2324仁寶</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2357' %}>2357華碩</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2365' %}>2365昆穎</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2382' %}>2382廣達</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2809' %}>2809京城銀</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2832' %}>2832台產</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2849' %}>2849安泰銀</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2886' %}>2886兆豐金</a>
+                        <a class="collapse-item" href={% url 'industry:chip_2891' %}>2891中信金</a>
+                        <a class="collapse-item" href={% url 'industry:chip_3231' %}>3231緯創</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 技術指標index -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFour"
+                   aria-expanded="true" aria-controls="collapseFour">
+                    <i class="fas fa-industry"></i>
+                    <span>技術指標</span>
+                </a>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <!--<h6 class="collapse-header">Custom Components:</h6>-->
+                        <a class="collapse-item" href={% url 'industry:index_2324' %}>2324仁寶</a>
+                        <a class="collapse-item" href={% url 'industry:index_2357' %}>2357華碩</a>
+                        <a class="collapse-item" href={% url 'industry:index_2365' %}>2365昆穎</a>
+                        <a class="collapse-item" href={% url 'industry:index_2382' %}>2382廣達</a>
+                        <a class="collapse-item" href={% url 'industry:index_2809' %}>2809京城銀</a>
+                        <a class="collapse-item" href={% url 'industry:index_2832' %}>2832台產</a>
+                        <a class="collapse-item" href={% url 'industry:index_2849' %}>2849安泰銀</a>
+                        <a class="collapse-item" href={% url 'industry:index_2886' %}>2886兆豐金</a>
+                        <a class="collapse-item" href={% url 'industry:index_2891' %}>2891中信金</a>
+                        <a class="collapse-item" href={% url 'industry:index_3231' %}>3231緯創</a>
                     </div>
                 </div>
             </li>
@@ -126,12 +182,12 @@
 
             <!-- Nav Item - Utilities Collapse Menu 投資股票基本知識簡述 -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseThree"
-                   aria-expanded="true" aria-controls="collapseThree">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseFive"
+                   aria-expanded="true" aria-controls="collapseFive">
                     <i class="fas fa-coins"></i>
                     <span>投資股票基本知識簡述</span>
                 </a>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingUtilities"
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                      data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <!--<h6 class="collapse-header">Custom Utilities:</h6>-->

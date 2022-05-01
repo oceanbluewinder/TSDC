@@ -3,7 +3,8 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Name>TSDC</Name>
     <RootNamespace>TSDC</RootNamespace>
-    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+    <InterpreterId>MSBuild|env1|$(MSBuildProjectFullPath)</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -51,13 +52,144 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="industry\templates\industry\aboutus1.html" />
+    <Content Include="industry\templates\industry\chip_2324.html" />
+    <Content Include="industry\templates\industry\chip_2357.html" />
+    <Content Include="industry\templates\industry\chip_2365.html" />
+    <Content Include="industry\templates\industry\chip_2382.html" />
+    <Content Include="industry\templates\industry\chip_2809.html" />
+    <Content Include="industry\templates\industry\chip_2832.html" />
+    <Content Include="industry\templates\industry\chip_2849.html" />
+    <Content Include="industry\templates\industry\chip_2886.html" />
+    <Content Include="industry\templates\industry\chip_2891.html" />
+    <Content Include="industry\templates\industry\chip_3231.html" />
+    <Content Include="industry\templates\industry\index_2324.html" />
+    <Content Include="industry\templates\industry\index_2357.html" />
+    <Content Include="industry\templates\industry\index_2365.html" />
+    <Content Include="industry\templates\industry\index_2382.html" />
+    <Content Include="industry\templates\industry\index_2809.html" />
+    <Content Include="industry\templates\industry\index_2832.html" />
+    <Content Include="industry\templates\industry\index_2849.html" />
+    <Content Include="industry\templates\industry\index_2886.html" />
+    <Content Include="industry\templates\industry\index_2891.html" />
+    <Content Include="industry\templates\industry\index_3231.html" />
     <Content Include="industry\templates\industry\industry1.html" />
     <Content Include="industry\templates\industry\question1.html" />
     <Content Include="industry\templates\industry\question2.html" />
     <Content Include="industry\templates\industry\question3.html" />
+    <Content Include="industry\templates\industry\report_2324.html" />
+    <Content Include="industry\templates\industry\report_2357.html" />
+    <Content Include="industry\templates\industry\report_2365.html" />
+    <Content Include="industry\templates\industry\report_2382.html" />
+    <Content Include="industry\templates\industry\report_2809.html" />
+    <Content Include="industry\templates\industry\report_2832.html" />
+    <Content Include="industry\templates\industry\report_2849.html" />
+    <Content Include="industry\templates\industry\report_2886.html" />
+    <Content Include="industry\templates\industry\report_2891.html" />
+    <Content Include="industry\templates\industry\report_3231.html" />
     <Content Include="requirements.txt" />
     <Content Include="static\css\sb-admin-2.css" />
     <Content Include="static\css\sb-admin-2.min.css" />
+    <Content Include="static\csv\chip2324.csv" />
+    <Content Include="static\csv\chip2357.csv" />
+    <Content Include="static\csv\chip2365.csv" />
+    <Content Include="static\csv\chip2382.csv" />
+    <Content Include="static\csv\chip2809.csv" />
+    <Content Include="static\csv\chip2832.csv" />
+    <Content Include="static\csv\chip2849.csv" />
+    <Content Include="static\csv\chip2886.csv" />
+    <Content Include="static\csv\chip2891.csv" />
+    <Content Include="static\csv\chip3231.csv" />
+    <Content Include="static\csv\index2324.csv" />
+    <Content Include="static\csv\index2357.csv" />
+    <Content Include="static\csv\index2365.csv" />
+    <Content Include="static\csv\index2382.csv" />
+    <Content Include="static\csv\index2809.csv" />
+    <Content Include="static\csv\index2832.csv" />
+    <Content Include="static\csv\index2849.csv" />
+    <Content Include="static\csv\index2886.csv" />
+    <Content Include="static\csv\index2891.csv" />
+    <Content Include="static\csv\index3231.csv" />
+    <Content Include="static\csv\report2324.csv" />
+    <Content Include="static\csv\report2357.csv" />
+    <Content Include="static\csv\report2365.csv" />
+    <Content Include="static\csv\report2382.csv" />
+    <Content Include="static\csv\report2809.csv" />
+    <Content Include="static\csv\report2832.csv" />
+    <Content Include="static\csv\report2849.csv" />
+    <Content Include="static\csv\report2886.csv" />
+    <Content Include="static\csv\report2891.csv" />
+    <Content Include="static\csv\report3231.csv" />
+    <Content Include="static\html\2324三大法人買賣超.html" />
+    <Content Include="static\html\2324今年收盤價.html" />
+    <Content Include="static\html\2324外資持股數.html" />
+    <Content Include="static\html\2324投信持股數.html" />
+    <Content Include="static\html\2324收盤價k線圖.html" />
+    <Content Include="static\html\2324自營商持股數.html" />
+    <Content Include="static\html\2324財報折線圖.html" />
+    <Content Include="static\html\2357三大法人買賣超.html" />
+    <Content Include="static\html\2357今年收盤價.html" />
+    <Content Include="static\html\2357外資持股數.html" />
+    <Content Include="static\html\2357投信持股數.html" />
+    <Content Include="static\html\2357收盤價k線圖.html" />
+    <Content Include="static\html\2357自營商持股數.html" />
+    <Content Include="static\html\2357財報折線圖.html" />
+    <Content Include="static\html\2365三大法人買賣超.html" />
+    <Content Include="static\html\2365今年收盤價.html" />
+    <Content Include="static\html\2365外資持股數.html" />
+    <Content Include="static\html\2365投信持股數.html" />
+    <Content Include="static\html\2365收盤價k線圖.html" />
+    <Content Include="static\html\2365自營商持股數.html" />
+    <Content Include="static\html\2365財報折線圖.html" />
+    <Content Include="static\html\2382三大法人買賣超.html" />
+    <Content Include="static\html\2382今年收盤價.html" />
+    <Content Include="static\html\2382外資持股數.html" />
+    <Content Include="static\html\2382投信持股數.html" />
+    <Content Include="static\html\2382收盤價k線圖.html" />
+    <Content Include="static\html\2382自營商持股數.html" />
+    <Content Include="static\html\2382財報折線圖.html" />
+    <Content Include="static\html\2809三大法人買賣超.html" />
+    <Content Include="static\html\2809今年收盤價.html" />
+    <Content Include="static\html\2809外資持股數.html" />
+    <Content Include="static\html\2809投信持股數.html" />
+    <Content Include="static\html\2809收盤價k線圖.html" />
+    <Content Include="static\html\2809自營商持股數.html" />
+    <Content Include="static\html\2809財報折線圖.html" />
+    <Content Include="static\html\2832三大法人買賣超.html" />
+    <Content Include="static\html\2832今年收盤價.html" />
+    <Content Include="static\html\2832外資持股數.html" />
+    <Content Include="static\html\2832投信持股數.html" />
+    <Content Include="static\html\2832收盤價k線圖.html" />
+    <Content Include="static\html\2832自營商持股數.html" />
+    <Content Include="static\html\2832財報折線圖.html" />
+    <Content Include="static\html\2849三大法人買賣超.html" />
+    <Content Include="static\html\2849今年收盤價.html" />
+    <Content Include="static\html\2849外資持股數.html" />
+    <Content Include="static\html\2849投信持股數.html" />
+    <Content Include="static\html\2849收盤價k線圖.html" />
+    <Content Include="static\html\2849自營商持股數.html" />
+    <Content Include="static\html\2849財報折線圖.html" />
+    <Content Include="static\html\2886三大法人買賣超.html" />
+    <Content Include="static\html\2886今年收盤價.html" />
+    <Content Include="static\html\2886外資持股數.html" />
+    <Content Include="static\html\2886投信持股數.html" />
+    <Content Include="static\html\2886收盤價k線圖.html" />
+    <Content Include="static\html\2886自營商持股數.html" />
+    <Content Include="static\html\2886財報折線圖.html" />
+    <Content Include="static\html\2891三大法人買賣超.html" />
+    <Content Include="static\html\2891今年收盤價.html" />
+    <Content Include="static\html\2891外資持股數.html" />
+    <Content Include="static\html\2891投信持股數.html" />
+    <Content Include="static\html\2891收盤價k線圖.html" />
+    <Content Include="static\html\2891自營商持股數.html" />
+    <Content Include="static\html\2891財報折線圖.html" />
+    <Content Include="static\html\3231三大法人買賣超.html" />
+    <Content Include="static\html\3231今年收盤價.html" />
+    <Content Include="static\html\3231外資持股數.html" />
+    <Content Include="static\html\3231投信持股數.html" />
+    <Content Include="static\html\3231收盤價k線圖.html" />
+    <Content Include="static\html\3231自營商持股數.html" />
+    <Content Include="static\html\3231財報折線圖.html" />
+    <Content Include="static\html\test1.html" />
     <Content Include="static\images\TSDC_去背.png" />
     <Content Include="static\images\TSDC_去背ico.ico" />
     <Content Include="static\images\投資小樹.png" />
@@ -1928,6 +2060,8 @@
     <Folder Include="static\js\" />
     <Folder Include="static\js\demo\" />
     <Folder Include="static\images\" />
+    <Folder Include="static\html\" />
+    <Folder Include="static\csv\" />
     <Folder Include="static\scss\" />
     <Folder Include="static\scss\navs\" />
     <Folder Include="static\scss\utilities\" />
@@ -1958,6 +2092,15 @@
     <Folder Include="TSDC\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Interpreter Include="env1\">
+      <Id>env1</Id>
+      <Version>3.8</Version>
+      <Description>env1 (Python 3.8 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
     <Interpreter Include="env\">
       <Id>env</Id>
       <Version>0.0</Version>
